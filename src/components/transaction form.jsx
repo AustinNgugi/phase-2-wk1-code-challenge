@@ -1,4 +1,5 @@
-import React ,{useState}from 'react'
+import React ,{useState}from 'react';
+import Button from 'react-bootstrap/Button'
 // here  I am creating the form 
 const Transactionform=({onsubmit})=>{
     const [date,setDate]=useState('');
@@ -19,7 +20,7 @@ const Transactionform=({onsubmit})=>{
     <input type="text"placeholder='Description'value={description}onChange={(e)=>setDescription(e.target.value)}/>
     <input type="text"placeholder='category'value={category}onChange={(e)=>setCategory(e.target.value)} />
 <input type ="number"placeholder='Amount'value={amount }onChange={(e)=>setAmount(e.target.value)}/>
-<button type='submit'>Add Transaction</button>
+<Button type='submit' className='"btn btn-primary"'>Add Transaction</Button>
 </form> 
  );
 

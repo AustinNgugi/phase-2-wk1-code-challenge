@@ -1,4 +1,6 @@
 import React,{useState}from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from 'react-bootstrap/Button';
     const FilterTransactions=({onChange}) =>{
     const [searchTerm,setSearchTerm]=useState('');
     const handleChange =(e)=>{setSearchTerm(e.target.value);
@@ -8,7 +10,7 @@ import React,{useState}from 'react';
 return(
     <div>
         <input type='text' placeholder="Search your recent transactions"value={searchTerm}onChange={handleChange}/>
-        <button onClick={handleSearch}>Search</button>
+        <Button onClick={handleSearch}>Search</Button>
     </div>
 )}
 export default FilterTransactions;

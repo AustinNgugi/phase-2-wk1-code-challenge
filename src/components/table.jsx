@@ -1,11 +1,10 @@
 // 
 import React from "react";
-import "./Head.css";
-
-const Table = ({ Transactions }) => {
+import Table from'react-bootstrap/Table';
+const Tabletransaction = ({ Transactions }) => {
   return (
-    <table>
-      <thead className="fox">
+    <Table striped>
+      <thead>
         <tr>
           <th>Date</th>
           <th>Description</th>
@@ -23,8 +22,8 @@ const Table = ({ Transactions }) => {
           </tr>
         ))}
       </tbody>
-    </table>
+    </Table>
   );
 };
 
-export default Table;
+export default Tabletransaction;
